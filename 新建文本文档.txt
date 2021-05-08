@@ -1,0 +1,6 @@
+select emplid, a.menugrpname,a.menugrpdescription
+  from lduser l
+  left join ldusertomenugrp u
+    on u.usercode = l.emplid
+  left join ldmenugrpa a
+    on a.menugrpcode = u.menugrpcode
