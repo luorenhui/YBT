@@ -1,0 +1,7 @@
+drop sequence seq_Lccontinfoili;
+
+create sequence seq_Lccontinfoili
+increment by 1
+start with 100000
+minvalue 1
+maxvalue 999999999999;
